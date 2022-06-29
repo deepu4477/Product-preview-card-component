@@ -1,0 +1,143 @@
+
+    /* BODY */
+    body{
+     background-color: hsl(30, 38%, 92%);
+     font-size: 14px;
+      }
+
+      /* ATTRIBUTION */
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    /* PARENT CLASS CONTAINER */
+
+    .container{
+      width: 450px;
+      height: 420px;
+    margin: 129px auto;
+    display: flex;
+    }
+
+ /* CHILD CLASS -> IMAGE CONTAINER */
+
+    .container-image{
+      width: 225px;
+        height: 420px;
+    }
+   
+    .container-image img{
+      width: 225px;
+      height: 420px;
+        object-fit: cover;
+        border-top-left-radius: 13px;
+        border-bottom-left-radius: 13px;
+    }
+/* CHILD CLASS -> CONTENT CONTAINER */
+
+    .container-content{
+      background: white ;
+      width: 450px;
+        border-top-right-radius: 13px;
+        border-bottom-right-radius: 13px;
+    }
+
+    .container-inner-content
+    {
+        margin: 2% 8%;
+    }
+
+    .container-content h1{
+      font-family: Fraunces;
+      margin-top: -9px;
+    }
+
+   .container-content p ,span{
+    font-family: Montserrat;
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+   }
+
+  .container-content p:first-child{
+    letter-spacing: 5px;
+  
+  }
+
+  .middle{
+    display: flex;
+    align-items: center;
+      margin-bottom: 15px;
+  }
+
+  .container-content strong
+  {
+    font-family: Fraunces;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 1rem;
+    color:hsl(158, 36%, 37%);  
+
+  }
+
+  .container-content span{
+    text-decoration: line-through;
+  }
+  
+  /* BUTTON */
+
+  .btn{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border : 0px solid hsl(158, 36%, 37%);
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family:  Montserrat;
+    padding: 15px;
+  }
+  .btn:hover{
+    background-color:hsl(158, 60%, 18%);
+
+  }
+
+ .pad{
+  margin-right: 4px;
+ }  
+       .btn{
+        margin-top: 0px;
+        margin-bottom: 0px;
+       }
+      
+
+ @media screen and (max-width: 450px) {
+     .container{
+        width: 100%;
+        height: 100%;
+        margin: 3%;
+        flex-direction: column;
+        }
+
+        .container-image{
+          width: 100%;
+          padding-right: 3%;  
+        }
+
+        .container-image img{
+           width: 100%;
+           padding-right: 3%;
+            object-fit: cover;
+            border-top-right-radius: 13px;
+            border-bottom-left-radius: 0px;
+        }
+
+        .container-content{
+            background: white ;
+            width: 100%;
+            height: 50%;
+            padding-right:3%;
+            border-top-right-radius  : 0px;
+            border-bottom-right-radius: 13px;
+        }
+ 
+    } 
